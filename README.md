@@ -6,18 +6,30 @@ ___
 
 Elixir + OPC-UA 
 
+<br/>
+
+___
+
+<br/>
+
 ## ToDo:
+
+<br/>
+
 - [  ] Fix dataTypes
 - [  ] Better organize nodes in a tree
 - [  ] Read nodes from ... Database? File?
+- [  ] Include unit tests
 - [  ] Create Phoenix companion app
 - [  ] Improve this documentation
+
 <br/>
 <br/>
 
 
 
 ## Build and Run!
+<br/>
 
 To build the container locally use:
 
@@ -27,15 +39,22 @@ cd opcua-elixir-telemetry
 docker build -t opcua-demo:latest .
 ```
 
-then, just run using the command:
+then, just run the container using the command:
 
 ```bash
-docker run opcua-demo:latest
+docker run -d -p 4050:4050 4040:4040 opcua-demo:latest
 ```
+<br/>
+
+You can now use an OPC-UA Client/Explorer to connect to the server running at the URL `opc.tcp://localhost:4050`. Chech that there are two objects alongside the server, one for a temperature sensor and another one with umidity sensor. 
+
+The server has been tested with *Integration Objects*' OPC-UA Client. *Matrikon*'s OPC-UA client is not supported for now. Feel free to suggest a client that I should test with. 
 
 <br/>
 
 <br/>
+
+> <b>Note:</b> The tests provided within the repository are only for the Opex library. I didn't create any test for my implementation yet. 
 
 ___
 
@@ -47,6 +66,7 @@ ___
 
 Opex62541 is an Elixir wrapper for the [open62541](https://github.com/open62541/open62541) library; open62541 is an open-source implementation of OPC UA (OPC Unified Architecture) aka IEC 62541 licensed under Mozilla Public License v2.0.
 
+<br/>
 
 ## Features
 

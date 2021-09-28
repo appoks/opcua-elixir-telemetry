@@ -43,6 +43,9 @@ RUN mix local.hex --force && \
 
 USER asdf
 
+EXPOSE 4040
+EXPOSE 4050
+
 RUN mix deps.get && mix compile
 
-RUN mix run
+ENTRYPOINT ["mix", "run"]
