@@ -7,11 +7,11 @@ ___
 Elixir + OPC-UA 
 
 ## ToDo:
-- [  ] Fix DataTypes
+- [  ] Fix dataTypes
 - [  ] Better organize nodes in a tree
-- [  ] Read Nodes from ... Database? File?
-- [  ] Create Phoenix Companion App
-
+- [  ] Read nodes from ... Database? File?
+- [  ] Create Phoenix companion app
+- [  ] Improve this documentation
 <br/>
 <br/>
 
