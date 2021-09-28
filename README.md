@@ -4,11 +4,36 @@ ___
 
 <br/>
 
+Elixir + OPC-UA 
+
 ## ToDo:
 - [  ] Fix DataTypes
 - [  ] Better organize nodes in a tree
 - [  ] Read Nodes from ... Database? File?
 - [  ] Create Phoenix Companion App
+
+<br/>
+<br/>
+
+
+
+## Build and Run!
+
+To build the container locally use:
+
+```bash
+git clone https://github.com/appoks/opcua-elixir-telemetry
+cd opcua-elixir-telemetry
+docker build -t opcua-demo:latest .
+```
+
+then, just run using the command:
+
+```bash
+docker run opcua-demo:latest
+```
+
+<br/>
 
 <br/>
 
@@ -38,22 +63,6 @@ Opex62541 implements the following features from [open62541](https://github.com/
 - Client
   - All OPC UA services supported
   - Support for subscriptions/monitored items.
-
-## Usage
-
-To build the container locally use:
-
-```bash
-git clone https://github.com/valiot/opex62541
-cd opex62541
-docker build -t <name:tag> .
-```
-
-then, just run using the command:
-
-```bash
-docker run <name:tag>
-```
 
 ## Documentation
 
